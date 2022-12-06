@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+/*
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    background-color:black;
+}
+
+#parte-superior {
+    padding: 0 5%;
+    margin: 2vw;
+    height: 13vw;
+    max-height: 90px;
+    background-color: #472C20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2vw;
+    box-shadow: 4px 3px 3px #4e3932af;
+}
+ #parte-superior p { 
+     font-size: clamp(14px, 4vw, 32px); 
+     color: white; 
+     text-shadow: #ffffff06 0.5px 0.5px 3px; 
+     font-weight: bold;
+     margin: 5px;
+ } 
+ #parte-superior > ul > li > a { 
+     font-size: clamp(12px, 3.5vw, 32px); 
+     color: white;
+     padding: 0;
+     text-decoration: none;
+ } 
+  
+  #parte-inferior { 
+     margin: 0;
+     display: flex; 
+     justify-content: space-around;
+ } 
+#parte-inferior h1 {
+     color:#F1E9E1; 
+     display: inline;
+     text-align: center;
+     margin: 10vw 9vw;
+     padding: 0;
+     font-size: clamp(26px, 7vw, 50px);
+     font-weight: bold;
+ } 
+ img { 
+     width: 34vw;
+     height: auto;
+     margin: 0vw;
+ }
+
+h1, p {
+  color: white;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  padding: 5px;
+  font-weight: normal;
+}
+h1 {
+  font-size: clamp(16px, 4vw, 30px);
+}
+p {
+  font-size: clamp(12px, 3.5vw, 28px);
+}
+
+
+
+.menu {
+    list-style: none;
+    float: left;
+}
+
+.menu > li {
+    position: relative;
+    float: left;
+}
+
+.menu > li a {
+    color: #F1E9E1;
+    text-decoration: none;
+    text-align: center;
+    padding: 4px;
+    display: block;
+}
+
+.menu > li > a:hover {
+    color: white;
+}
+
+.menu > li > ul {
+    position: absolute;
+    top: 3vw;
+    width: clamp(90px, 20vw, 180px);
+    background-color: rgb(50, 32, 19);
+    display: none;
+}
+
+.menu > li:hover > ul,
+.menu > li.over > ul {
+    display: block;
+    background-color: rgb(23, 23, 23);
+}
+.menu > li> ul > li:hover {
+    background-color: rgb(41, 39, 38);
+}
+
+.menu > li > ul > li {
+    border: 1px solid black;
+    display: block;
+}
+.menu a {
+    font-size: clamp(10px, 2vw, 16px);
+}
